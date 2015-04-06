@@ -1,0 +1,15 @@
+REGISTER
+R1 16
+R3 42
+R5 8
+MEMORY
+8 40
+16 60
+CODE
+      LD R2, 0(R1)
+      DADD R4, R2, R3
+      SD R4, 0(R1)
+      BNEZ R4, NEXT
+      DADD R2, R1, #8
+NEXT: DADD R1, R1, R3
+

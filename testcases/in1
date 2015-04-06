@@ -1,0 +1,26 @@
+REGISTER
+R0 0
+R1 2
+R2 74
+R3 98
+R7 8
+R10 213
+R12 2
+R14 328
+R15 9
+R20 472
+
+MEMORY
+480 88
+568 8362
+576 23
+
+
+CODE
+Loop: LD R4, 8(R20)
+      DADD R20, R7, R4
+      SUB R1, R1, #1
+      DADD R8, R15, #20
+      BNEZ R1, Loop
+      SD R20, 16(R6)
+
