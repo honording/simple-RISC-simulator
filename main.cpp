@@ -1,6 +1,3 @@
-//EECS 643 Advanced Computer Organization
-//Fall 2012
-//Course Porject
 //12/14/2012
 //By Hongyuan Ding
 
